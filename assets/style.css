@@ -32,7 +32,28 @@ body * {
   padding: 1rem;
 }
 
-@media (min-width: 700px) {
+#left a {
+  display: inline-block;
+  background: rgba(250, 250, 250, 0.1);
+  color: #eee;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  width: auto;
+  transition: all .2s;
+}
+
+#left a * {
+  margin: 0;
+}
+
+#left a:hover, #left a:active {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+@media (min-width: 750px) {
   #left {
     position: fixed;
     width: 50%;
@@ -43,7 +64,7 @@ body * {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 750px) {
   #right {
     margin-left: 50%;
     width: 50%;

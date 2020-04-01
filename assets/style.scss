@@ -4,7 +4,7 @@
 $color: #eee;
 $background: #222;
 
-$break: 700px;
+$break: 750px;
 
 body, html {
     overflow-x: hidden;
@@ -41,6 +41,29 @@ body {
 
 #left {
     @extend .container;
+
+    a {
+        display: inline-block;
+        background: rgba(250,250,250,0.1);
+        color: $color;
+        border-radius: 4px;
+        text-transform: uppercase;
+
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+
+        width: auto;
+
+        * {
+            margin: 0;
+        }
+
+        transition: all .2s;
+        &:hover, &:active {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+    }
 
     @media (min-width: $break) {
         position: fixed;
