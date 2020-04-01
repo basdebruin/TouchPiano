@@ -6,24 +6,40 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+
     <title>Touch Piano</title>
 </head>
 
 <body>
-    <section class="container">
-        <h1>Touch Piano</h1>
+    <section id="left">
+        <h1>Touch<br>Piano</h1>
         <h2>by Bas de Bruin</h2>
 
         <p>An online audio experiment made for iPad.<br>
         (make sure to turn off don't disturb)</p>
-
-        <h3>Select a layout:</h3>
-        <div class="select">
-            <a href="play.html?piano">4 Octave Piano (regular)</a>
-            <a href="play.html?wholestep">Whole Note Grid</a>
-            <a href="play.html?alternate">Alternating Whole Tone</a>
-            <a href="play.html?7-tet">Gamelan (7-tet)</a>
-        </div>
+    </section>
+    
+    <section id="right">
+        <h2>Select a layout:</h2>
+        <ul>
+            <a href="play.html?piano">
+                <h3>4 octave piano</h3>
+                <p>Regular Piano Layout</p>
+            </a>
+            <a href="play.html?wholestep">
+                <h3>Whole Note Grid</h3>
+                <p>hexagonal layout</p>
+            </a>
+            <a href="play.html?alternate">
+                <h3>Alternating Whole Tone</h3>
+                <p>regular piano layout with aligned white and black keys</p>
+            </a>
+            <a href="play.html?7-tet">
+                <h3>Gamelan</h3>
+                <p>7TET tuning</p>
+            </a>
+        </ul>
     </section>
 </body>
 

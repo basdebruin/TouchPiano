@@ -5,7 +5,7 @@
 const noteNames = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
 
 const colors = {
-    bg: '#333',
+    bg: '#222',
     fg: '#bbb',
     active: '#fff'
 }
@@ -76,11 +76,12 @@ function draw() {
         for (let b of buttons) {
             b.draw();
         }
-        push();
-        fill(colors.fg);
-        textAlign(LEFT);
-        text(layout.name, 20, 30);
-        pop();
+        // print layout
+        // push();
+        // fill(colors.fg);
+        // textAlign(LEFT);
+        // text(layout.name, 20, 30);
+        // pop();
 
     } else {
 

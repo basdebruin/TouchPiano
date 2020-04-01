@@ -2,7 +2,9 @@
 // bas de bruin
 
 $color: #eee;
-$background: #333;
+$background: #222;
+
+$break: 700px;
 
 body, html {
     overflow-x: hidden;
@@ -11,11 +13,11 @@ body, html {
 }
 
 :root {
-    font-size: 17px;
+    font-size: 20px;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+    font-family: 'Barlow', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
     font-size: 1rem;
     letter-spacing: 0.03em;
     line-height: 1.7em;
@@ -31,29 +33,63 @@ body {
 }
 
 .container {
-    text-align: center;
     width: 100%;
     max-width: 500px;
-    margin: 0 auto;
-    padding: 10rem 1rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+#left {
+    @extend .container;
+
+    @media (min-width: $break) {
+        position: fixed;
+        width: 50%;
+        max-width: 50%;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+}
+
+#right {
+    @extend .container;
+
+    @media (min-width: $break) {
+        margin-left: 50%;
+        width: 50%;
+        max-width: 50%;
+
+        h2 {
+            text-align: right;
+            margin-bottom: 1.1rem;
+            margin-top: 0;
+        }
+    }
 }
 
 
 // styles
 h1, h2, h3 {
-    text-transform: uppercase;
     font-weight: 700;
+    font-weight: normal;
 }
 h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: normal;
+    margin: 0;
+    line-height: 4rem;
 }
 h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 3rem;
-    color: #ccc;
+    color: #bbb;
 }
 h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
     margin-top: 2rem;
 }
 
@@ -64,16 +100,65 @@ a {
     font-weight: bold;
     width: 100%;
 }
-.select > a {
-    background: #050505;
-    padding: 0.5em 0.5em;
-    margin: 0.5em 0;
-    border-radius: 1.5em;
 
-    transition: all .1s;
+ul {
+    a {
+        display: block;
+        background: $color;
+        color: $background;
+        border-radius: 4px;
 
-    &:hover, &:active {
-        background: #222;
-        color: #fff;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+
+        * {
+            margin: 0;
+        }
+
+        transition: all .2s;
+        &:hover, &:active {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+    }
+}
+
+
+// for play.html
+
+.canvas-body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#back-arrow {
+    position: fixed;
+    left: 0.9rem;
+    top: 0.7rem;
+    background: $color;
+    color: $background;
+    text-decoration: none;
+    font-size: 1rem;
+    z-index: 999;
+    padding: 0.1rem 0.5rem 0.5rem 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+
+    pointer-events: all;
+
+    transition: all .2s;
+    &:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
     }
 }
