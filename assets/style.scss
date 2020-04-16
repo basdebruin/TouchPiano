@@ -161,6 +161,8 @@ canvas {
     top: 0;
     left: 0;
     pointer-events: none;
+    // !!! REALLY IMPORTANT FOR TOUCH Y POSITION:
+    touch-action: none;
 }
 
 #back-arrow {

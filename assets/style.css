@@ -1,37 +1,36 @@
+/* line 9, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 body, html {
   overflow-x: hidden;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
+/* line 15, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 :root {
-  font-size: 20px;
-}
+  font-size: 20px; }
 
+/* line 19, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 body {
   font-family: 'Barlow', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.03em;
   line-height: 1.7em;
   background: #222;
-  color: #eee;
-}
+  color: #eee; }
+  /* line 24, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
+  body * {
+    font-weight: normal; }
+  /* line 30, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
+  body * {
+    box-sizing: border-box; }
 
-body * {
-  font-weight: normal;
-}
-
-body * {
-  box-sizing: border-box;
-}
-
+/* line 35, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 .container, #left, #right {
   width: 100%;
   max-width: 500px;
   margin: 0;
-  padding: 1rem;
-}
+  padding: 1rem; }
 
+/* line 45, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 #left a {
   display: inline-block;
   background: rgba(250, 250, 250, 0.1);
@@ -41,76 +40,72 @@ body * {
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   width: auto;
-  transition: all .2s;
-}
-
-#left a * {
-  margin: 0;
-}
-
-#left a:hover, #left a:active {
-  opacity: 0.9;
-  transform: scale(1.02);
-}
+  transition: all .2s; }
+  /* line 57, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
+  #left a * {
+    margin: 0; }
+  /* line 62, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
+  #left a:hover, #left a:active {
+    opacity: 0.9;
+    transform: scale(1.02); }
 
 @media (min-width: 750px) {
+  /* line 42, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
   #left {
     position: fixed;
     width: 50%;
     max-width: 50%;
     left: 0;
     top: 0;
-    margin: 0;
-  }
-}
+    margin: 0; } }
 
 @media (min-width: 750px) {
+  /* line 78, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
   #right {
     margin-left: 50%;
     width: 50%;
-    max-width: 50%;
-  }
-  #right h2 {
-    text-align: right;
-    margin-bottom: 1.1rem;
-    margin-top: 0;
-  }
-}
+    max-width: 50%; }
+    /* line 86, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
+    #right h2 {
+      text-align: right;
+      margin-bottom: 1.1rem;
+      margin-top: 0; } }
 
+/* line 96, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 h1, h2, h3 {
   font-weight: 700;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
+/* line 100, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 h1 {
   text-transform: uppercase;
   font-size: 4.5rem;
   font-weight: normal;
   margin: 0;
-  line-height: 4rem;
-}
+  line-height: 4rem; }
 
+/* line 107, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 h2 {
   font-size: 1.2rem;
   margin-bottom: 3rem;
-  color: #bbb;
-}
+  color: #bbb; }
 
+/* line 112, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 h3 {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 2rem;
-}
+  margin-top: 2rem; }
 
+/* line 119, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 a {
   color: #eee;
   text-decoration: none;
   display: block;
   font-weight: bold;
-  width: 100%;
-}
+  width: 100%; }
 
+/* line 128, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 ul a {
   display: block;
   background: #eee;
@@ -118,32 +113,31 @@ ul a {
   border-radius: 4px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
-  transition: all .2s;
-}
+  transition: all .2s; }
+  /* line 137, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
+  ul a * {
+    margin: 0; }
+  /* line 142, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
+  ul a:hover, ul a:active {
+    opacity: 0.9;
+    transform: scale(1.02); }
 
-ul a * {
-  margin: 0;
-}
-
-ul a:hover, ul a:active {
-  opacity: 0.9;
-  transform: scale(1.02);
-}
-
+/* line 152, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 .canvas-body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  pointer-events: none;
-}
+  pointer-events: none; }
 
+/* line 159, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 canvas {
   position: fixed;
   top: 0;
   left: 0;
   pointer-events: none;
-}
+  touch-action: none; }
 
+/* line 168, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
 #back-arrow {
   position: fixed;
   left: 0.9rem;
@@ -158,10 +152,10 @@ canvas {
   height: 2rem;
   border-radius: 100%;
   pointer-events: all;
-  transition: all .2s;
-}
+  transition: all .2s; }
+  /* line 185, /Users/basdebruin/Documents/GitHub/TouchPiano/assets/style.scss */
+  #back-arrow:hover {
+    opacity: 0.9;
+    transform: scale(1.05); }
 
-#back-arrow:hover {
-  opacity: 0.9;
-  transform: scale(1.05);
-}
+/*# sourceMappingURL=style.css.map */
