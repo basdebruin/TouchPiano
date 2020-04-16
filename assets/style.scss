@@ -153,14 +153,13 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    pointer-events: none;
+    touch-action: none;
 }
 
 canvas {
     position: fixed;
     top: 0;
     left: 0;
-    pointer-events: none;
     // !!! REALLY IMPORTANT FOR TOUCH Y POSITION:
     touch-action: none;
 }
